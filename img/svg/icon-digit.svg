@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1923" height="902.55" viewBox="0 0 1923 902.55">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_179" data-name="Rectangle 179" width="1923" height="902.55" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_169" data-name="Rectangle 169" width="3" height="265" transform="translate(867.5 559.275)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_172" data-name="Rectangle 172" width="3" height="265" transform="translate(1052.5 559.275)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rectangle_175" data-name="Rectangle 175" width="3" height="181" transform="translate(1305.5 685.275)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <rect id="Rectangle_178" data-name="Rectangle 178" width="3" height="181" transform="translate(617.5 685.275)" fill="none"/>
+    </clipPath>
+    <image id="image" width="4" height="266" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAEKCAYAAAA1jPS6AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAABKADAAQAAAABAAABCgAAAACSyLH8AAAA4klEQVRYCe2W0Q6CMBAEQfkwv9cP5E2RvpDWMRlzaRsSyhNd9ub2Lo1x3rZtyp9bfkjvQyg3MvYx9pFt4LTXYXk81zkLOi37AUIR/z8HSpoI9+/ogS5gYHw4vAtKAlAw0NYdKIHgDHc0gXrbszj6jI9pIfTJ4V36BEu/Q8eTDh4s4PAuTaC+Qg/mDDhc8GnB8BI4agwHxvu4LftL+urCS0vgKP4o/+yCEuSAA1A4nAGHC4EuSIouNaABBnK4EOhyrfF9hXD4TlECwRnuABRCDUYTqAeDA9cSjiZJm0AD0a8z/gdYTHClbHlSCQAAAABJRU5ErkJggg=="/>
+    <image id="image-2" width="4" height="182" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAC2CAYAAAD+8ywAAAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAABKADAAQAAAABAAAAtgAAAACMo4dMAAAAwklEQVRIDe2SOw6DMBQEQwL3ynlzwFQhJm6Q8SBN9GRMA5UZ7e5bf4aU0q387uVPXl9geyLXeZxxHuPz9R7KwWP9NHfBo7Zk1fr9Z/EMKBygh1ugQAYALA6QAYCMgKKPxZu26IEMAO8BxbQ+0t8iBwZCkYEpHooMt0BxCMBeAk1bWLzHt75KgE+tmBW4BQof28eCzWEsFACwBDaHUABMgcJBIKOPBdVbjEWG3wt6ACAUCgfIAOjTFGMD1b0pprhl02MBFSlOelm+c9QAAAAASUVORK5CYII="/>
+  </defs>
+  <g id="Group_193" data-name="Group 193" clip-path="url(#clip-path)">
+    <g id="Group_177" data-name="Group 177" style="mix-blend-mode: hard-light;isolation: isolate">
+      <g id="Group_176" data-name="Group 176">
+        <g id="Group_175" data-name="Group 175" clip-path="url(#clip-path-2)">
+          <g id="Group_174" data-name="Group 174">
+            <g id="Group_173" data-name="Group 173" clip-path="url(#clip-path-2)">
+              <use id="Rectangle_167" data-name="Rectangle 167" transform="translate(867 558.55)" xlink:href="#image"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_182" data-name="Group 182" style="mix-blend-mode: hard-light;isolation: isolate">
+      <g id="Group_181" data-name="Group 181">
+        <g id="Group_180" data-name="Group 180" clip-path="url(#clip-path-4)">
+          <g id="Group_179" data-name="Group 179">
+            <g id="Group_178" data-name="Group 178" clip-path="url(#clip-path-4)">
+              <use id="Rectangle_170" data-name="Rectangle 170" transform="translate(1052 558.55)" xlink:href="#image"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_187" data-name="Group 187" style="mix-blend-mode: hard-light;isolation: isolate">
+      <g id="Group_186" data-name="Group 186">
+        <g id="Group_185" data-name="Group 185" clip-path="url(#clip-path-6)">
+          <g id="Group_184" data-name="Group 184">
+            <g id="Group_183" data-name="Group 183" clip-path="url(#clip-path-6)">
+              <use id="Rectangle_173" data-name="Rectangle 173" transform="translate(1305 684.55)" xlink:href="#image-2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_192" data-name="Group 192" style="mix-blend-mode: hard-light;isolation: isolate">
+      <g id="Group_191" data-name="Group 191">
+        <g id="Group_190" data-name="Group 190" clip-path="url(#clip-path-8)">
+          <g id="Group_189" data-name="Group 189">
+            <g id="Group_188" data-name="Group 188" clip-path="url(#clip-path-8)">
+              <use id="Rectangle_176" data-name="Rectangle 176" transform="translate(617 684.55)" xlink:href="#image-2"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Path_6" data-name="Path 6" d="M974.029,706.275H950.74v-87.77a80.3,80.3,0,0,1-30.086,17.653V615.024q9.116-2.984,19.809-11.313t14.67-19.436h18.9Z" transform="translate(0 -4)" fill="#189ad8"/>
+  </g>
+</svg>

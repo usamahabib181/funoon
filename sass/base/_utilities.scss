@@ -1,0 +1,238 @@
+.bg-graphic {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(../img/graphic-circle-1.png), linear-gradient($black-color, $black-color);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	@include media-query(phone) {
+		background: url(../img/graphic-circle.png), linear-gradient($black-color, $black-color),
+			$black-color;
+		background-repeat: no-repeat;
+		background-size: 50rem, cover;
+		background-position: 15rem -25rem, center;
+	}
+}
+
+.bg-graphic-radial {
+	background: url(../img/graphic-circle-4.png), $radial-gradient;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	@include media-query(phone) {
+		background: url(../img/graphic-circle.png), $radial-gradient;
+		background-repeat: no-repeat;
+		background-size: 50rem, cover;
+		background-position: 15rem -25rem, center;
+	}
+}
+
+.bg-radial {
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: $radial-gradient;
+		z-index: -100;
+	}
+}
+
+.bg-radial-primary {
+	background: $radial-gradient-primary;
+}
+
+.bg-radial-simple {
+	background: $radial-gradient;
+}
+
+.primary-color {
+	color: $primary-color;
+}
+
+.primary-bg {
+	background-color: $primary-color;
+}
+
+.dark-color {
+	color: #666;
+}
+
+.dark-color-2 {
+	color: #a4a4a4;
+}
+
+.dark-color-3 {
+	color: rgb(75, 67, 67);
+}
+
+.black-color {
+	color: black;
+}
+
+.seperator {
+	text-align: center;
+	position: relative;
+	span {
+		background: $black-color;
+		padding: 0 1rem;
+	}
+	&::before {
+		content: "";
+		height: 1px;
+		background: white;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		z-index: -1;
+	}
+	&--white {
+		&::before {
+			background-color: #808080;
+		}
+		span {
+			background-color: white;
+			color: $text-primary-color;
+		}
+	}
+}
+
+.mb-12 {
+	margin-bottom: 12rem;
+}
+
+.mb-9 {
+	margin-bottom: 9rem;
+}
+
+.mw-30 {
+	width: 100%;
+	max-width: 30rem;
+}
+
+.unstyled-list {
+	list-style: disc;
+	list-style-position: inside;
+}
+
+.py-70 {
+	padding: 7rem 0;
+}
+
+.font-sm {
+	font-size: 1rem;
+}
+
+.ml-res-50 {
+	margin-left: 5rem;
+	@include media-query(phone) {
+		margin-left: 2rem;
+	}
+}
+
+.mr-res-50 {
+	margin-right: 5rem;
+	@include media-query(phone) {
+		margin-right: 2rem;
+	}
+}
+
+.pb-100 {
+	padding-bottom: 10rem;
+}
+
+.vertical-body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.rotate-right {
+	transform: rotate(270deg);
+}
+
+.white-color {
+	color: white !important;
+	font-size: 1.2rem;
+}
+
+.button--group {
+	text-shadow: none;
+	line-height: 2;
+}
+
+.mt-50 {
+	margin-top: 5rem;
+}
+
+.fade-out {
+	animation: fadeOut 1s linear 2s forwards;
+}
+
+.visible-md {
+	max-height: 50rem;
+	overflow-y: auto;
+	&::-webkit-scrollbar {
+		opacity: 0;
+	}
+}
+
+.mt-sm-78 {
+	@include media-query(phone) {
+		margin-top: 78px;
+	}
+}
+
+.border-gray-bottom {
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.border-gray {
+	border: 2px solid #e0e0e0;
+}
+
+.border-t-b-gray-invoice {
+	border-top: 2px solid #e0e0e0;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+.invoice-row-bg {
+	background-color: #f4f4f4;
+}
+
+.border-gray-right {
+	border-right: 2px solid #e0e0e0;
+}
+
+.invoice-bg-color {
+	background-color: #fcfcfc;
+}
+
+.invoice-text-color {
+	color: #717171;
+}
+
+.header {
+	.screens[data-bs-popper] {
+		width: 11rem;
+		left: 0rem;
+		li:not(:last-child) {
+			padding-bottom: 1rem;
+		}
+		.dropdown-item:hover {
+			color: white;
+		}
+	}
+}
+
+.invert-img {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}

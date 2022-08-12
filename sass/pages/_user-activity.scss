@@ -1,0 +1,43 @@
+.activity {
+	&__wrapper {
+	}
+	&__box {
+	}
+	&__list {
+		padding: 1.5rem;
+		border-radius: 1rem;
+		background-color: #fafafa;
+	}
+	&__row {
+		@include flex();
+		@include selectDirectChilds {
+			padding: 0.5rem;
+			margin: 0;
+		}
+
+		@include notLastChild {
+			border-bottom: 1px solid #ededed;
+		}
+		padding: 0.5rem;
+
+		p {
+			flex-basis: 10rem;
+		}
+
+		h4 {
+			flex: 1;
+		}
+
+        a:hover{
+            color: $black-color;
+        }
+
+		button {
+			background-color: transparent;
+			flex-basis: 5rem;
+		}
+	}
+	&__footer {
+		text-align: right;
+	}
+}

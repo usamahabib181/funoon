@@ -1,0 +1,130 @@
+.main-heading {
+	font-size: 1.8rem;
+	color: $primary-color;
+}
+
+.main-heading-bold {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: $primary-color;
+}
+
+.main-heading-bold-lg {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: $primary-color;
+}
+
+.secondary-heading-shadow-xl {
+	font-size: 5rem;
+	font-weight: bold;
+	color: $white-color;
+	text-shadow: 0 4px 1px #333;
+}
+
+.secondary-heading-bold-xl {
+	font-size: 5rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.secondary-heading-bold-xxl {
+	font-size: 8rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.secondary-heading-bold-lg {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.secondary-heading-bold {
+	font-size: 2.8rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.main-heading-sm {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: $primary-color;
+}
+
+.font-arabic {
+	font-family: "Almarai", sans-serif;
+	font-weight: 400 !important;
+}
+
+.single-digit {
+	font-size: 15rem;
+	font-weight: bold;
+	line-height: 0.75;
+}
+
+.line-height-1 {
+	line-height: 1;
+}
+
+.line-height-1nd2 {
+	line-height: 1.2;
+}
+
+////////////////
+.main-heading-md {
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.heading-alignment {
+	margin-bottom: 1rem;
+}
+
+.main-heading-sm-2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $white-color;
+}
+
+.main-heading-sm-3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: $secondary-text-color;
+	background-color: transparent;
+	border: 1px solid $primary-color;
+}
+
+.main-heading-sm-4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #333333;
+}
+
+.default-font-size {
+	font-size: 1.2rem;
+}
+
+.default-font-size-2 {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.main-heading-bold-2-a {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: #4d4d4d;
+}
+
+.main-heading-bold-3 {
+	font-size: 1.4rem;
+	font-weight: lighter;
+	color: #808080;
+}
+
+.main-heading-bold-2 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	color: $white-color;
+}

@@ -1,0 +1,45 @@
+.availibility {
+	&__box {
+	}
+
+	&__figure {
+	}
+
+	&__platforms {
+		@include selectAllExceptLast {
+		}
+
+		@include selectDirectChilds {
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__button {
+		padding: 0.5rem 1rem;
+		display: inline-block;
+		height: 4rem;
+		width: 15rem;
+		background-color: $black-color;
+		border-radius: 0.8rem;
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: lighten($black-color, 3%);
+		}
+	}
+
+	&__social-button {
+		background-color: #222;
+		border-radius: 0.8rem;
+		overflow: hidden;
+		display: inline-block;
+		box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+		padding: 0.5rem;
+
+		img {
+			height: 5rem;
+		}
+	}
+}

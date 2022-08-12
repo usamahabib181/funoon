@@ -1,0 +1,310 @@
+.registration-new {
+    padding: 7rem 0;
+}
+
+.section-plan {
+    width: 100%;
+    max-width: 45rem;
+    margin: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    line-height: 2;
+    &_monthly {
+        width: 50%;
+        border-right: 1px solid $white-color;
+        padding: 1rem 1.5rem 0 1.5rem;
+        position: relative;
+        @include media-query(phone) {
+            border-right: none;
+        }
+    }
+    &_yearly {
+        width: 50%;
+        padding: 10px 15px 5px 15px;
+        position: relative;
+    }
+    &__price-off {
+        color: #fff700;
+        font-size: 1.6rem;
+    }
+    &_details {
+        width: 100%;
+        border-top: 1px solid $white-color;
+        padding: 15px 15px 12px 15px;
+    }
+    &_check-box {
+        position: absolute;
+        top: 2.4rem;
+        right: 0.4rem;
+        @include media-query(phone) {
+            right: -1rem;
+            top: 1.5rem;
+        }
+    }
+}
+
+.discription {
+    @include media-query(phone) {
+        line-height: 1.5;
+    }
+}
+
+.section_payment {
+    &--icon {
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $primary-color;
+        display: inline-block;
+        border-radius: 50%;
+        position: relative;
+    }
+    &--lock-img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &--bank-account-img {
+        @include media-query(phone) {
+            height: 3rem;
+            margin-left: 1rem;
+        }
+    }
+    &--dropdown-menu {
+        border: 1px solid $primary-color;
+    }
+}
+
+.credit-plan {
+    background-color: #e6e6e6;
+    padding: 0.3rem 2rem 0.3rem 1rem;
+    border-radius: 0.7rem;
+    &__button {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+    &__options {
+        text-align: left;
+        @include media-query(tab) {
+            text-align: left;
+            margin-bottom: 2rem;
+            margin-left: .5rem;
+        }
+    }
+}
+
+.section-recover {
+    &__password {
+        padding: 3rem 0;
+        background-color: #e6e6e6;
+        border-radius: 2rem;
+    }
+    &__country-code {
+        width: 80%;
+        margin: auto;
+    }
+    &__notification {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.section-tvshow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: .2rem;
+    @include media-query(phone) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2rem;
+    }
+    &__item {
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__checkbox {
+        position: absolute;
+        top: 1.5rem;
+        right: .2rem;
+    }
+}
+
+.section-verification {
+    &__inputs {
+        width: 90%;
+        // background-color: red;
+        margin: auto;
+    }
+    &__input {
+        width: 5rem;
+        height: 5.5rem;
+        border: none;
+        text-align: center;
+        border-radius: .4rem;
+        font-size: 2rem;
+        color: $secondary-text-color;
+        background-color: #A4A4A4;
+        border: 2px solid transparent;
+        outline: 0;
+        &:focus {
+            border: 2px solid $primary-color;
+        }
+        &::-webkit-input-placeholder {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+.monthly-plan {
+    display: flex;
+    // background-color: $primary-color;
+    // padding: .3rem;
+    border: 3px solid #f5f5f5;
+    border-radius: .7rem;
+    overflow: hidden;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    &__plans {
+        position: relative;
+        padding: 2.6rem 7rem;
+        border-right: 1px solid #E3E3E3;
+        background-color: #f5f5f5;
+        overflow: hidden;
+        // border-radius: .7rem 0 0 .7rem;
+        // border-radius: 1rem 0 0 1rem;
+        .form-check {
+            position: absolute;
+            left: .7rem;
+            top: .7rem;
+        }
+    }
+    &__details {
+        flex-grow: 1;
+        font-size: 1.4rem;
+        flex-shrink: 1;
+        font-weight: lighter;
+        color: #333;
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 36px 0;
+    }
+    &__prices {
+        background-color: $primary-color;
+        padding: 1.6rem 5rem;
+        // border-radius: 0rem 1rem 1rem 0rem;
+    }
+}
+
+.page-discription {
+    padding: 2rem;
+    p {
+        color: #A3A3A3;
+        line-height: 2;
+    }
+}
+
+.month {
+    background-color: #f5f5f5;
+    border-radius: .7rem;
+}
+
+.month .active {
+    border-color: $primary-color;
+    border-radius: .7rem;
+}
+
+@media screen and (max-width: 768px) {
+    .monthly-plan {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .monthly-plan__details {
+        padding: 9px 0;
+    }
+    .monthly-plan__plans {
+        text-align: center;
+    }
+}
+
+.img-lock {
+    height: 4rem;
+}
+
+.credit-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    background-color: #e6dfdf;
+    position: relative;
+    @include media-query(phone) {
+        flex-direction: column;
+        // flex-basis: auto;
+    }
+    &__code {
+        color: #333;
+        font-size: 1.6rem;
+        display: flex;
+        flex-basis: 16rem;
+        flex-grow: 1;
+        position: relative;
+        @include media-query(phone) {
+            flex-basis: 5rem;
+        }
+        img {
+            height: 4rem;
+        }
+        &::after {
+            content: "";
+            width: 1px;
+            height: 4rem;
+            border-right: 1px solid #BCBCBC;
+            display: block;
+            position: absolute;
+            left: 20rem;
+            @include media-query(phone) {
+                display: none;
+            }
+        }
+    }
+    &__default {
+        flex-grow: 1;
+        @include media-query(phone) {
+            padding: 2rem 0;
+        }
+        &::after {
+            content: "";
+            width: 1px;
+            height: 4rem;
+            border-right: 1px solid #BCBCBC;
+            display: block;
+            position: absolute;
+            right: 20rem;
+            top: 2rem;
+            @include media-query(phone) {
+                display: none;
+            }
+        }
+        button {
+            color: $primary-color;
+            font-weight: 700;
+            padding: .5rem 3rem;
+            border: 2px solid $primary-color;
+            border-radius: 3rem;
+            background-color: transparent;
+            transition: all .4s;
+            &:hover {
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+    }
+    &__edit {
+        flex-grow: 1;
+        text-align: end;
+    }
+}

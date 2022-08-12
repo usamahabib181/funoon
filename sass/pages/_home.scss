@@ -1,0 +1,308 @@
+.get-started {
+    padding: 2rem 0;
+    background-color: $primary-color;
+    position: relative;
+    &__row {
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        @include media-query(phone) {
+            flex-direction: column;
+            position: relative;
+            @include selectAllExceptLast {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &__desc {
+        margin: 0 2rem;
+        @include media-query(phone) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    &__graphic {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: translateY(-50%);
+        @include media-query(phone) {
+            display: block;
+        }
+    }
+}
+
+.main {
+    background: url(../img/graphic-circle-2.png), url(../img/graphic-circle-3.png);
+    background-size: 100%, 110%;
+    background-position: 0 5%, -5rem 80%;
+    background-repeat: no-repeat;
+    @include media-query(tab-land) {
+        background-image: url(../img/graphic-circle-2.png), url(../img/graphic-circle-3.png), url(../img/graphic-circle-3.png);
+        // background-position: -10rem 0, -10rem 100%;
+        background-position: 0 -5%, 0 50%, 0 100%;
+    }
+    @include media-query(phone) {
+        background-image: url(../img/graphic-circle-2.png), url(../img/graphic-circle-3.png), url(../img/graphic-circle-3.png);
+        background-size: 200%, 200%, 150%;
+        background-position: 140% 0, -20rem 60%, -20rem 100%;
+    }
+}
+
+.feature {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5rem 0;
+    @include media-query(tab-land) {
+        min-height: 40vh;
+    }
+    .secondary-heading-bold-lg {
+        @include media-query(tab-land) {
+            font-size: 2rem;
+        }
+    }
+    .main-logo {
+        img {
+            // width: 100%;
+            @include media-query(tab-land) {
+                width: 50%;
+            }
+        }
+    }
+    .emoji {
+        width: 10rem;
+    }
+    .download-detail {
+        @media only screen and(max-width: 768px) {
+            margin-bottom: 5rem;
+        }
+    }
+    .download-app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 2rem;
+        @include media-query(phone) {
+            flex-direction: column;
+        }
+        .download {
+            width: 20rem;
+        }
+    }
+    .multiple-screen {
+        @media only screen and(max-width: 768px) {
+            margin-left: -7rem;
+        }
+    }
+    .smartphone {
+        width: 100%;
+    }
+    .download-gif {
+        @include media-query(tab-port) {
+            text-align: center;
+        }
+    }
+    .yearly {
+        text-align: center;
+    }
+    .monthly {
+        text-align: center;
+    }
+    .package {
+        height: 21rem;
+        padding: 2rem 0;
+        border-radius: 2rem;
+        background-color: #2bc4f3;
+        .secondary-heading-bold-lg {
+            padding-left: 18rem;
+            @include media-query(phone) {
+                padding-left: 0;
+                padding-top: 5rem;
+                font-size: 2rem;
+            }
+        }
+        .secondary-heading-bold-xxl {
+            @include media-query(phone) {
+                font-size: 3.5rem;
+            }
+        }
+        @include media-query(phone) {
+            height: auto;
+        }
+    }
+    .chit {
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: "1 Month Free";
+            position: absolute;
+            background-color: red;
+            font-size: 2rem;
+            padding: 0rem 18rem 0 5rem;
+            transform: rotate(337deg);
+            left: -48px;
+            top: 1px;
+            @include media-query(phone) {
+                padding: 0rem 10rem 0 5rem;
+                font-size: 1.3rem;
+                left: -40px;
+                top: 1rem;
+            }
+        }
+    }
+    &__text {
+        font-size: 2rem;
+        max-width: 50%;
+        margin: auto;
+        line-height: 1.2;
+        text-align: center;
+        @include media-query(phone) {
+            max-width: 90%;
+        }
+    }
+    &__list {
+        padding: 2rem;
+        background: $radial-gradient-primary;
+        li {
+            position: relative;
+            font-size: 2rem;
+            padding: 0 3rem;
+            text-align: center;
+            &::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: $white-color;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 0%;
+            }
+        }
+    }
+}
+
+@include arabicRTL {
+    .feature {
+        .chit {
+            &::after {
+                content: "شهر مجاني";
+            }
+        }
+    }
+}
+
+.description {
+    padding: 8rem 0;
+    &__content {
+        display: flex;
+        margin: 1.5rem 0;
+    }
+    &__icon {
+        flex-shrink: 0;
+        width: 4rem;
+        height: 4rem;
+        background: linear-gradient(90deg, #090909 0%, rgba(53, 53, 53, 0.554374) 50%, #1c1c1c 100%);
+        border-radius: 50%;
+        border: solid 1px $primary-color;
+        font-size: 2rem;
+        color: $white-color;
+        margin-right: 1.5rem;
+        @include flex(center, center);
+    }
+    &__details {
+        h3 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.circle {
+    background: url(../img/graphic-footer-circle.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include media-query(phone) {
+        background: none;
+    }
+}
+
+.stars {
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        background: url("../img/stars-bg.png");
+        background-position: top;
+        background-size: cover;
+    }
+    img {
+        position: relative;
+        z-index: 1;
+    }
+    &__content {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    &__videobox {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        opacity: 0;
+        transform-origin: center;
+    }
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__btn {
+        position: absolute;
+        z-index: 6;
+        top: 5rem;
+        right: 5rem;
+        background: transparent;
+        img {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+    &__figure-fadeOut {
+        animation: fadeOut 1s linear forwards;
+    }
+    &__video-fadeIn {
+        animation: fadeInVideo 1.5s linear 1s forwards;
+    }
+}
+
+.bg-circles {
+    position: relative;
+    overflow: hidden;
+    background: $radial-gradient-primary;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 5;
+        inset: 0;
+        background-image: url(../img/graphic-circle-2.png);
+        background-position: 0 -20%;
+        background-size: 115%;
+        background-repeat: no-repeat;
+    }
+    @include selectDirectChilds {
+        position: relative;
+        z-index: 6;
+    }
+}

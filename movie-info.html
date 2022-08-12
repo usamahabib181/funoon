@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- FAVICON -->
+    <link rel="icon" href="img/svg/logo.svg" sizes="any" type="image/svg+xml" />
+    <!-- Font Awesome Script -->
+    <!-- <script src="https://kit.fontawesome.com/7ae40850c4.js" crossorigin="anonymous"></script> -->
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="css/font-awesome/css/all.css" />
+    <!-- Bootstrap 4.6x CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-4.6x/bootstrap.min.css" /> -->
+    <!-- Bootstrap 5.0 beta 2 CSS -->
+    <link rel="stylesheet" href="css/bootstrap-5.0/bootstrap.min.css" />
+    <!-- Bootstrap 5.0 beta 2 RTL CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap-5.0/bootstrap.rtl.min.css" /> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Movie Info</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- FIRST LEVEL NAVBAR -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="landing-page.html">
+                    <img src="img/svg/logo.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <!-- TOP NAVBAR DESKTOP -->
+                    <div class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i> Search</a>
+                        </li>
+                        <li class="nav-item header__navbar-item d-flex align-items-center">
+                            <a class="mx-3 navbar-link active" href="movie-info.html">English</a>
+                            <a class="mx-3 navbar-link main-heading-sm-2" href="arabic/movie-info.html">العربية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="img/profile.png" class="me-2 rounded-circle" width="30px" height="30px" alt="profile picture" /> Ali Haider
+                            </a>
+                            <ul class="dropdown-menu header__dropdown" aria-labelledby="navbarDropdown">
+                                <div class=" header__dropdown-profile d-flex justify-content-between align-items-center">
+                                    <img class="me-2 header__avatar" src="img/profile.png" width="60px" height="60px" alt="profile picture" />
+                                    <a class="white-color" href="#">
+                                        <span class="main-heading-bold-2">Ali Haider</span> <br /> Manage Profile
+                                    </a>
+                                    <img src="img/svg/profile-arrow.svg" width="20px" height="20px" alt="Arrow" />
+                                </div>
+                                <li>
+                                    <hr class="dropdown-divider white-color" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item header__item white-color" href="#">My Profile</a>
+                                    <a class="dropdown-item header__item white-color" href="#">My Collections</a>
+                                    <a class="dropdown-item header__item white-color" href="#">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <!-- TOP NAVBAR MOBILE-->
+                <div class="header__mobile-nav">
+                    <div class="dropdown me-3">
+                        <button class="button button--primary-sm dropdown-toggle" type="button" id="headerMobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+								English
+							</button>
+                        <ul class="dropdown-menu" aria-labelledby="headerMobileDropdown">
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                            <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="button button--primary-sm">Sign in</a>
+                </div>
+            </div>
+        </nav>
+        <!-- SECOND LEVEL NAVBAR DESKTOP -->
+        <nav class="header-nav header-nav--desktop">
+            <ul class="header-nav__list">
+                <li class="header-nav__item active"><a class="header-nav__link" href="#">Home</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Plays</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Operations</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Series</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Programs</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Movies</a></li>
+            </ul>
+        </nav>
+        <!-- SECOND LEVEL (bottom) NAVBAR PHONE -->
+        <nav class="header-nav header-nav--smartphone">
+            <ul class="header-nav__list">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="img/landing-page/icons/icon-phone-home.svg" alt="icon" />
+                        <span class="header-nav__text"> Home </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="img/landing-page/icons/icon-phone-category.svg" alt="icon" />
+                        <span class="header-nav__text"> Categories </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="img/landing-page/icons/icon-phone-download.svg" alt="icon" />
+                        <span class="header-nav__text"> Categories </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="img/landing-page/icons/icon-phone-search.svg" alt="icon" />
+                        <span class="header-nav__text"> Categories </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure class="video__cover">
+        <img class="video__title-cover fade-out" src="img/slider/covers/title-cover-1.jpg" alt="title cover" />
+        <video class="video__figure" src="video/1.mp4" class="w-100" loop autoplay muted></video>
+        <figcaption class="video__content">
+            <div class="d-flex">
+                <img class="video__thumbnail" src="./img/landing-page/movie/poster-9.png" alt="Bye Bye London" />
+                <div class="video__details">
+                    <h3 class="secondary-heading-bold">Bye Bye London</h3>
+                    <ul class="mb-3 video__duration">
+                        <li class="video__duration-time">Play</li>
+                        <li class="video__genre-name">TV seriers</li>
+                    </ul>
+                    <p class="mb-3 video__description">
+                        A satirical play, a wealthy Kuwaiti businessman travels to London after he lied to his family that he was sick to spend good time in London. He meet a group of strange characters there, so will he return home safety? Starring Abdul Hussein Abdel Reda
+                        Ghanem Al-Saleh Maryam Al-Ghadban Written by Abdul Hussein Abdul-Redha Directed by monsef Al-Souissi Produced in 1981
+                    </p>
+                    <div class="mb-3">
+                        <p class="mb-0 video__content-faded">Written by: Abdul Hussein Abdul-Redha</p>
+                        <p class="mb-0 video__content-faded">Directed by: Monsef Al-Souissi</p>
+                        <p class="mb-0 video__content-faded">
+                            Stars: Abdul Hussein Abdel Reda,Ghanem Al-Saleh,Maryam AlGhadhban
+                        </p>
+                        <p class="mb-0 video__content-faded">Duration:2h 56min</p>
+                    </div>
+                    <div class="video__cta">
+                        <button class="video__button me-2">Watch Now</button>
+                        <button class="video__button-outline me-2">Add To List</button>
+                        <button class="video__button">More Info</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="mt-4 video__nav">
+                <ul class="video__nav-list">
+                    <li class="video__nav-item active"><a href="#">Home</a></li>
+                    <li class="video__nav-item"><a class="video__nav-link" href="#">Plays</a></li>
+                    <li class="video__nav-item"><a class="video__nav-link" href="#">Operations</a></li>
+                </ul>
+            </nav>
+        </figcaption>
+    </figure>
+
+    <div class="section-episode bg-radial-simple">
+        <select class="section-episode__select">
+				<option>Season 1</option>
+				<option>Season 2</option>
+				<option>Season 3</option>
+			</select>
+        <div class="section-episode__container pb-100">
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-1.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 1</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 2</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 3</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 4</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 5</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-1.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 6</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 7</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 8</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 9</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="./img/landing-page/resume/poster-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>Episode 10</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>Play now</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4.6x -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper)  -->
+    <!-- <script src="js/jquery.js"></script>
+		<script src="js/bootstrap-4.6x/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 5.0 beta 2 -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap-5.0/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

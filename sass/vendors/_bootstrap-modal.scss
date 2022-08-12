@@ -1,0 +1,43 @@
+.movie-popup {
+	.modal-dialog {
+		box-shadow: 0 0 1.5rem $black-color;
+	}
+
+	.modal-content {
+		border: 1px solid #231f20;
+		border-radius: 0;
+	}
+
+	.btn-close {
+		width: 2rem;
+		height: 2rem;
+		background: url(../img/popup/icons/icon-close.svg) no-repeat;
+		background-size: contain;
+		opacity: 1;
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+		z-index: 1;
+	}
+
+	.modal-header {
+		padding: 0;
+		border-bottom: none;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		position: relative;
+	}
+
+	.modal-body {
+		padding: 0;
+	}
+}
+
+@include arabicRTL {
+	.movie-popup {
+		.btn-close {
+			right: unset;
+			left: 2rem;
+		}
+	}
+}

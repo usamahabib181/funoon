@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69.636" height="69.636" viewBox="0 0 69.636 69.636">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2bc4f3"/>
+      <stop offset="0.5" stop-color="#00aeee"/>
+      <stop offset="1" stop-color="#0095da"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2630" data-name="Group 2630" transform="translate(-756.486 -213.613)">
+    <circle id="Ellipse_3535" data-name="Ellipse 3535" cx="34.818" cy="34.818" r="34.818" transform="translate(756.486 213.613)" fill="url(#linear-gradient)"/>
+    <g id="Group_2086" data-name="Group 2086" transform="translate(315.57 -981)">
+      <path id="Path_10792" data-name="Path 10792" d="M456.31,1233.5a27.372,27.372,0,0,0,38.711,0v-4.612a27.372,27.372,0,0,1-38.711,0Z" fill="#fff"/>
+      <circle id="Ellipse_3536" data-name="Ellipse 3536" cx="2.965" cy="2.965" r="2.965" transform="translate(477.115 1223.853)" fill="#fff"/>
+      <circle id="Ellipse_3537" data-name="Ellipse 3537" cx="2.965" cy="2.965" r="2.965" transform="translate(467.538 1223.853)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

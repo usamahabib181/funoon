@@ -1,0 +1,173 @@
+    /* --------------------------( animated slider CSS )----------------- */
+    
+    .slider {
+        height: 530px;
+        margin: auto;
+        position: relative;
+        width: calc(100%);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        margin-bottom: 6rem;
+        margin-top: 8rem;
+    }
+    
+    .slide-track {
+        display: flex;
+        width: calc(318px * 18 * 3);
+        animation: scroll 450s linear 1s infinite;
+    }
+    
+    .slide-track:hover {
+        animation-play-state: paused;
+    }
+    
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-288px * 18 * 3));
+        }
+    }
+    
+    .slide {
+        height: 477px;
+        width: 318px;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        perspective: 200px;
+    }
+    
+    .slider::before,
+    .slider::after {
+        background: linear-gradient(to right, rgba(16, 84, 132, 1) 0%, rgba(16, 84, 132, 0) 100%);
+        content: "";
+        height: 485px;
+        position: absolute;
+        width: 200px;
+        max-width: 10%;
+        z-index: 2;
+        margin-top: 20px;
+    }
+    
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+    
+    .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    
+    .slide-track img {
+        width: 100%;
+        transition: transform 1%;
+        border-radius: 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+        transition-duration: 0.5s;
+    }
+    
+    .slide-track img:hover {
+        transform: translateZ(20px);
+        z-index: 900;
+        transition-duration: 0.5s;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 10px;
+    }
+    /* -------------------------- ( 3D effect for pop-corn)---------------------------*/
+    
+    .cards {
+        max-width: 100%;
+    }
+    
+    .image,
+    .image2,
+    .image3,
+    .image4,
+    .image5 {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transform: rotateX(10deg) rotateY(10deg);
+    }
+    
+    .containerdiv {
+        border: 0;
+        float: left;
+        position: relative;
+        @media screen and(max-width: 768px) {
+            margin-left: -6rem;
+        }
+    }
+    
+    .cornerimage {
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .hero-features {
+        margin-top: 2rem;
+    }
+    /* --------------------------(gradient border for top images)----------------- */
+    
+    .hero-features__list {
+        border-width: 3px;
+        border-style: solid;
+        border-image: linear-gradient( to bottom, rgba(0, 0, 0, 0) 0%, rgba(16, 84, 132, 1) 50%, rgba(0, 0, 0, 0)) 2 100% !important;
+        transition: all .2s;
+       /* &:hover {
+            transform: scale(1.2);
+            background: none;
+        }*/
+    }
+    .hero-features__list:hover > h1, h2,  img,  p{
+         
+        
+            transform: scale(15);
+            background: none;
+            border:solid red 4px !important;
+         
+    }
+    
+    .hero-features__list p {
+        color: #0F98D5;
+        transition: all .3s ease-in-out;
+    }
+    
+    .hero-features__list {
+        width: 20%;
+        overflow: hidden;
+        .secondary-heading-bold {
+            @media screen and(max-width: 420px) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+    
+    .hero-features__list:hover p {
+        color: #fff;
+    }
+    
+    .hero-features__list:first-child {
+        border-left: none;
+    }
+    
+    .hero-features__list:last-child {
+        border-right: none;
+    }
+
+    
+    .list-carousel-en {
+        .link {}
+        .owl-item .cloned {
+            width: 10rem;
+        }
+        .owl-dots {
+            display: none;
+        }
+    }

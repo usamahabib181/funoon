@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta ch arset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- FAVICON -->
+    <link rel="icon" href="../../img/svg/logo.svg" sizes="any" type="image/svg+xml" />
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css" />
+    <!-- Bootstrap 5.0 beta 2 CSS -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap-5.0/bootstrap.min.css" /> -->
+    <!-- Bootstrap 5.0 beta 2 RTL CSS -->
+    <link rel="stylesheet" href="../css/bootstrap-5.0/bootstrap.rtl.min.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Movies Information </title>
+</head>
+
+<body class="rtl">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- FIRST LEVEL NAVBAR -->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="landing-page.html">
+                    <img src="../img/svg/logo.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <!-- TOP NAVBAR DESKTOP -->
+                    <div class="navbar-nav ms-auto align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i>بحث </a>
+                        </li>
+                        <li class="nav-item header__navbar-item d-flex align-items-center">
+                            <a class="mx-3 navbar-link active" href="../movie-info.html">English</a>
+                            <a class="mx-3 navbar-link main-heading-sm-2" href="arabic/index.html">العربية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../img/profile.png" class="me-2 rounded-circle" width="30px" height="30px" alt="profile picture" />علي حيدر
+                            </a>
+                            <ul class="dropdown-menu header__dropdown" aria-labelledby="navbarDropdown">
+                                <div class=" header__dropdown-profile d-flex justify-content-between align-items-center">
+                                    <img class="me-2 header__avatar" src="../img/profile.png" width="60px" height="60px" alt="profile picture" />
+                                    <a class="white-color" href="#">
+                                        <span class="main-heading-bold-2">علي حيدر</span> <br />إدارة الملف الشخصي
+                                    </a>
+                                    <img src="../img/svg/profile-arrow.svg" width="20px" height="20px" alt="Arrow" />
+                                </div>
+                                <li>
+                                    <hr class="dropdown-divider white-color" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item header__item white-color" href="#">ملفي</a>
+                                    <a class="dropdown-item header__item white-color" href="#">مجموعاتي</a>
+                                    <a class="dropdown-item header__item white-color" href="#">تسجيل خروج</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <!-- TOP NAVBAR MOBILE-->
+                <div class="header__mobile-nav">
+                    <div class="dropdown me-3">
+                        <button class="button button--primary-sm dropdown-toggle" type="button" id="headerMobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </button>
+                        <ul class="dropdown-menu" aria-labelledby="headerMobileDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#">عربى</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">فرنسي</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">الألمانية</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="button button--primary-sm">تسجيل الدخول</a>
+                </div>
+            </div>
+        </nav>
+        <!-- SECOND LEVEL NAVBAR DESKTOP -->
+        <nav class="header-nav header-nav--desktop">
+            <ul class="header-nav__list">
+                <li class="header-nav__item active">
+                    <a class="header-nav__link" href="#">الصفحة الرئيسية </a></li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">مسرحيات </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">عمليات</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">مسلسلات</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">البرامج</a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">أفلام</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- SECOND LEVEL (bottom) NAVBAR PHONE -->
+        <nav class="header-nav header-nav--smartphone">
+            <ul class="header-nav__list">
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="../img/landing-page/icons/icon-phone-home.svg" alt="icon" />
+                        <span class="header-nav__text">الصفحة الرئيسية  </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="../img/landing-page/icons/icon-phone-category.svg" alt="icon" />
+                        <span class="header-nav__text">التصنيفات  </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="../img/landing-page/icons/icon-phone-download.svg" alt="icon" />
+                        <span class="header-nav__text">التصنيفات  </span>
+                    </a>
+                </li>
+                <li class="header-nav__item">
+                    <a class="header-nav__link" href="#">
+                        <img class="header-nav__icon" src="../img/landing-page/icons/icon-phone-search.svg" alt="icon" />
+                        <span class="header-nav__text">التصنيفات </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure class="video__cover">
+        <img class="video__title-cover fade-out" src="../img/slider/covers/title-cover-1.jpg" alt="title cover" />
+        <video class="video__figure" src="video/1.mp4" class="w-100" loop autoplay muted></video>
+        <figcaption class="video__content">
+            <div class="d-flex">
+                <img class="video__thumbnail" src="../img/landing-page/movie/poster-9.png" alt="Bye Bye London" />
+                <div class="video__details">
+                    <h3 class="secondary-heading-bold">باي باي لندن</h3>
+                    <ul class="mb-3 video__duration">
+                        <li class="video__duration-time">مسرحيات </li>
+                        <li class="video__genre-name">مسلسل تلفزيونى</li>
+                    </ul>
+                    <p class="mb-3 video__description">
+                        مسرحية ساخرة ، رجل أعمال كويتي ثري يسافر إلى لندن بعد أن كذب على أسرته بأنه مريض ليقضي وقتًا ممتعًا في لندن. يلتقي بمجموعة من الشخصيات الغريبة هناك فهل سيعود بسلام؟ بطولة عبد الحسين عبد الرضا غانم الصالح مريم الغضبان تأليف عبد الحسين عبد الرضا إخراج منصف
+                        السويسي إنتاج عام 1981
+                    </p>
+                    <div class="mb-3">
+                        <p class="mb-0 video__content-faded">بقلم: عبد الحسين عبد الرضا</p>
+                        <p class="mb-0 video__content-faded">إخراج: منصف السويسي</p>
+                        <p class="mb-0 video__content-faded">
+                            النجوم: عبد الحسين عبد الرضا ، غانم الصالح ، مريم الغضبان
+                        </p>
+                        <p class="mb-0 video__content-faded">المدة: ساعتان و 56 دقيقة</p>
+                    </div>
+                    <div class="video__cta">
+                        <button class="video__button me-2">شاهد الآن</button>
+                        <button class="video__button-outline me-2">أضف إلى القائمة</button>
+                        <button class="video__button">مزيد من المعلومات</button>
+                    </div>
+                </div>
+            </div>
+            <nav class="mt-4 video__nav">
+                <ul class="video__nav-list">
+                    <li class="video__nav-item active">
+                        <a href="#">الصفحة الرئيسية </a>
+                    </li>
+                    <li class="video__nav-item">
+                        <a class="video__nav-link" href="#">مسرحيات </a>
+                    </li>
+                    <li class="video__nav-item">
+                        <a class="video__nav-link" href="#">عمليات</a>
+                    </li>
+                </ul>
+            </nav>
+        </figcaption>
+    </figure>
+
+    <div class="section-episode bg-radial-simple">
+        <select class="section-episode__select">
+				<option>الموسم 1</option>
+				<option>الموسم 2</option>
+				<option>الموسم 3</option>
+			</select>
+        <div class="section-episode__container pb-100">
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-1.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 1</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 2</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 3</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 4</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 5</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-1.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 6</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-2.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 7</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-3.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 8</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-4.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 9</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="episode-1">
+                <img src="../img/landing-page/resume/poster-5.png" class="card-img-top" alt="..." />
+                <div class="card-body d-flex justify-content-between w-100">
+                    <p class="card-text">
+                        <i class="fas fa-play"></i>
+                        <span>الحلقة 10</span>
+                    </p>
+                    <p>23:23</p>
+                </div>
+                <div class="overlay">
+                    <div class="d-flex align-items-baseline text">
+                        <i class="fas fa-play"></i>
+                        <p>العب الان</p>
+                    </div>
+                    <div class="resume__bar w-100">
+                        <div class="resume__progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 4.6x -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper)  -->
+    <!-- <script src="js/jquery.js"></script>
+  <script src="js/bootstrap-4.6x/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 5.0 beta 2 -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap-5.0/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

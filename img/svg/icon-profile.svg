@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90.394" height="90.599" viewBox="0 0 90.394 90.599">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.623" y1="0.263" x2="1.055" y2="-0.565" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#539ce0"/>
+      <stop offset="0.112" stop-color="#9ccfff"/>
+      <stop offset="0.372" stop-color="#4895de"/>
+      <stop offset="0.74" stop-color="#0063bf"/>
+      <stop offset="1" stop-color="#0057a8"/>
+    </linearGradient>
+    <filter id="Ellipse_3504" x="0" y="0" width="90.394" height="90.599" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.672" dy="1.672" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.115" result="blur"/>
+      <feFlood flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient" cx="0.485" cy="0.931" r="0.545" gradientTransform="translate(-0.001)" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#539ce0"/>
+      <stop offset="0.214" stop-color="#4895de"/>
+      <stop offset="0.74" stop-color="#0063bf"/>
+      <stop offset="1" stop-color="#0057a8"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-2" x1="1.035" y1="0.094" x2="-0.37" y2="0.848" gradientUnits="objectBoundingBox">
+      <stop offset="0.005" stop-color="#fff"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1912" data-name="Group 1912" transform="translate(-177.555 2992.524)">
+    <g id="Group_1907" data-name="Group 1907" transform="translate(179.227 -2990.853)">
+      <g id="Group_1906" data-name="Group 1906">
+        <g id="Group_1905" data-name="Group 1905">
+          <g transform="matrix(1, 0, 0, 1, -1.67, -1.67)" filter="url(#Ellipse_3504)">
+            <ellipse id="Ellipse_3504-2" data-name="Ellipse 3504" cx="41.853" cy="41.956" rx="41.853" ry="41.956" transform="translate(1.67 1.67)" fill="url(#linear-gradient)"/>
+          </g>
+          <ellipse id="Ellipse_3505" data-name="Ellipse 3505" cx="40.224" cy="40.322" rx="40.224" ry="40.322" transform="translate(1.629 1.633)" fill="url(#radial-gradient)"/>
+          <path id="Path_10632" data-name="Path 10632" d="M187.569-2942.111s13.475,16.2,33.619,14.564c4.764-.136,19.055-1.635,29.4-13.2.952-1.225,1.752-1.82.936.358-.817,1.5-11.33,15.005-27.253,16.536-6.262.545-23.77,2.432-36.837-15.534C186.481-2940.75,184.847-2944.833,187.569-2942.111Z" transform="translate(-177.498 3002.935)" fill="url(#linear-gradient-2)" style="mix-blend-mode: screen;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_1911" data-name="Group 1911" transform="translate(203.851 -2968.505)">
+      <g id="Group_1908" data-name="Group 1908" transform="translate(0.262 0.262)" style="mix-blend-mode: multiply;isolation: isolate">
+        <path id="Path_10633" data-name="Path 10633" d="M231.687-2938.011h-30.6a1.782,1.782,0,0,1-1.988-2.186,8.49,8.49,0,0,1,6.1-7.187c4.8-1.852,5.156-2.047,5.156-2.047s1.107-1.853,1.626-1.977.083-.852,0-1.047c-.088-.219-.742,0-.742-2.677,0-.886.115-.954-.327-.954s-1.434-.6-1.434-2.744,0-2.236.375-2.3c.068-.824-.391-2.15-.391-5.146s2.4-5.809,6.94-5.809c1.328,0,2.444-.627,3.7-.721.155.384.346,1.038.609,1.21.948.622,2.216,2.2,2.677,5.32,0,3-.461,4.322-.4,5.146.366.061.366.144.366,2.3s-1.007,2.744-1.434,2.744-.323.068-.323.954c0,2.677-.653,2.458-.737,2.677-.088.2-.517.931,0,1.047s1.637,1.977,1.637,1.977.339.2,5.121,2.047a8.457,8.457,0,0,1,6.1,7.245c.091,1.468-.362,2.128-2.036,2.128Z" transform="translate(-199.094 2972.803)" fill="#666" fill-rule="evenodd"/>
+      </g>
+      <g id="Group_1910" data-name="Group 1910">
+        <g id="Group_1909" data-name="Group 1909">
+          <path id="Path_10634" data-name="Path 10634" d="M231.477-2938.222H200.883a1.781,1.781,0,0,1-1.988-2.185,8.49,8.49,0,0,1,6.1-7.188c4.8-1.85,5.155-2.045,5.155-2.045s1.109-1.853,1.626-1.977.084-.852,0-1.049c-.088-.218-.74,0-.74-2.677,0-.885.115-.952-.327-.952s-1.434-.606-1.434-2.745c0-2.155,0-2.236.375-2.3.068-.825-.391-2.149-.391-5.146s2.4-5.81,6.94-5.81c1.328,0,2.444-.627,3.7-.72.155.382.347,1.037.61,1.209.948.624,2.216,2.2,2.677,5.321,0,3-.461,4.32-.4,5.146.367.061.367.143.367,2.3,0,2.138-1.008,2.745-1.434,2.745s-.323.067-.323.952c0,2.677-.653,2.459-.737,2.677-.088.2-.519.931,0,1.049s1.637,1.977,1.637,1.977.339.2,5.12,2.045a8.461,8.461,0,0,1,6.1,7.247c.091,1.468-.363,2.127-2.037,2.127Z" transform="translate(-198.884 2973.012)" fill="#ccc" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

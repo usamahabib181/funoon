@@ -1,0 +1,56 @@
+.footer {
+	text-align: center;
+
+	@include media-query(tab) {
+		padding: 6rem 0;
+	}
+
+	&--white a {
+		color: $primary-color;
+	}
+
+	&--white &__social {
+		a {
+			color: $white-color;
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+
+		@include media-query(tab) {
+			margin: 5rem 0;
+		}
+
+		li {
+			transition: all 0.25s;
+
+			@include notLastChild {
+				margin-right: 2rem;
+			}
+
+			&:hover {
+				transform: rotate(360deg);
+			}
+		}
+
+		a {
+			color: $black-color;
+			border-radius: 50%;
+			font-size: 1.6rem;
+			background-color: $primary-color;
+			@include flex(center, center);
+			width: 3rem;
+			height: 3rem;
+
+			@include media-query(tab) {
+				background-color: $primary-color;
+			}
+		}
+	}
+
+	&__copyright {
+		color: $primary-color;
+	}
+}

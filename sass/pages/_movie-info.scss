@@ -1,0 +1,155 @@
+.video {
+	position: relative;
+	&__content {
+		position: absolute;
+		bottom: 3rem;
+		left: 3rem;
+		z-index: 100;
+
+		@include media-query(phone) {
+			left: 0;
+			bottom: 0;
+			padding: 2rem;
+		}
+	}
+	&__details {
+		max-width: 100rem;
+		margin-left: 2rem;
+		align-self: flex-end;
+
+		@include media-query(phone) {
+			margin-left: 0;
+		}
+	}
+	&__thumbnail {
+		width: 22rem;
+		height: auto;
+		@include media-query(phone) {
+			display: none;
+		}
+	}
+	&__nav {
+		// position: absolute;
+		// bottom: -9rem;
+		// @include media-query(phone) {
+		//     left: 2rem;
+		// }
+	}
+	&__nav-list {
+		display: flex;
+
+		&--white {
+			justify-content: flex-end;
+			align-items: center;
+
+			@include media-query(phone) {
+				justify-content: center;
+			}
+			a,
+			a:hover,
+			a:active,
+			a:focus {
+				color: #717171;
+			}
+		}
+	}
+	&__nav-item {
+		border-bottom: 3px solid transparent;
+		padding: 0.4rem 0.5rem 0.4rem;
+		margin-bottom: -1px;
+	}
+	&__nav-item.active {
+		border-bottom: 3px solid #0f98d5;
+	}
+	&__nav-item:not(:first-child) {
+		margin-left: 3rem;
+	}
+}
+
+.section-episode {
+	width: 100%;
+	position: relative;
+	.episode-1 {
+		position: relative;
+		width: 100%;
+		overflow-y: hidden;
+		cursor: pointer;
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+		&:hover .card-body {
+			transform: translateY(6rem);
+		}
+		img {
+			height: auto;
+			object-fit: cover;
+		}
+		.card-body {
+			position: absolute;
+			bottom: 0;
+			background: $radial-gradient;
+			transition: all 0.3s ease-in;
+			z-index: 1;
+		}
+		.overlay {
+			background-color: rgba(0, 0, 0, 0.7);
+			position: absolute;
+			inset: 0;
+			opacity: 0;
+			transition: 0.5s;
+			&:hover {
+				opacity: 1;
+			}
+			p {
+				font-size: 2rem;
+				margin-left: 0.5rem;
+			}
+			i {
+				font-size: 2rem;
+			}
+		}
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.resume__bar {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	&__select {
+		background-color: #0f98d5;
+		color: #fff;
+		border: 1px solid #0f98d5;
+		outline: 0;
+		padding: 0.5rem;
+		font-weight: bold;
+		margin-left: 3rem;
+		margin-bottom: 3rem;
+		margin-top: 1rem;
+		border-radius: 0.5rem;
+		@include media-query(phone) {
+			margin-left: 2rem;
+		}
+	}
+	&__container {
+		width: 96%;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 2;
+		grid-gap: 3rem;
+		@include media-query(tab-land) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		@include media-query(phone) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@media only screen and(max-width:40rem) {
+			grid-template-columns: 1fr;
+		}
+		.episode-1 {
+			border-radius: 0.5rem;
+		}
+	}
+}

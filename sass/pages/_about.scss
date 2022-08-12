@@ -1,0 +1,43 @@
+.about {
+    min-height: 100vh;
+    background: url(../img/bg-cover.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10rem 0;
+    @include media-query(tab) {
+        background-position: center;
+    }
+    &--news {
+        background-image: url(../img/latest-news.jpg);
+    }
+    &__graphic {
+        position: absolute;
+        left: -5%;
+        top: 5%;
+        pointer-events: none;
+        user-select: none;
+        @include media-query(tab) {
+            left: -30%;
+        }
+        @include media-query(phone) {
+            display: none;
+        }
+    }
+}
+
+.latest-news-heading {
+    position: relative;
+}
+
+.new-icons {
+    position: absolute;
+    top: 13.3rem;
+    left: -2.8rem;
+    @include media-query(phone) {
+        display: none;
+    }
+}

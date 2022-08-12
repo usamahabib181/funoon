@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- FAVICON -->
+    <link rel="icon" href="../../img/svg/logo.svg" sizes="any" type="image/svg+xml" />
+    <!-- Font Awesome Css -->
+    <link rel="stylesheet" href="../css/font-awesome/css/all.css" />
+    <!-- Bootstrap 5.0 beta 2 CSS -->
+    <!-- <link rel="stylesheet" href="../css/bootstrap-5.0/bootstrap.min.css" /> -->
+    <!-- Bootstrap 5.0 beta 2 RTL CSS -->
+    <link rel="stylesheet" href="../css/bootstrap-5.0/bootstrap.rtl.min.css" />
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="../css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl-carousel/owl.theme.default.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Login</title>
+</head>
+
+<body class="rtl bg-graphic">
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="landing-page.html">
+                    <img src="../img/svg/logo.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i> بحث</a>
+                        </li>
+                        <li class="nav-item header__navbar-item d-flex align-items-center">
+                            <a class="navbar-link mx-3 active" href="../login.html">English</a>
+                            <a class="navbar-link mx-3 main-heading-sm-2" href="arabic/index.html">العربية</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            تفاصيل الحساب
+                          </a>
+                            <ul class="dropdown-menu screens" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">عمل</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">عمل آخر</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">شيء آخر هنا</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+                <div class="header__mobile-nav">
+                    <div class="dropdown me-3">
+                        <button class="button button--primary-sm dropdown-toggle" type="button" id="headerMobileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            English
+          </button>
+                        <ul class="dropdown-menu screens" aria-labelledby="headerMobileDropdown">
+                            <li><a class="dropdown-item" href="arabic/index.html">Arabic</a></li>
+                            <li><a class="dropdown-item" href="../login.html">English</a></li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="button button--primary-sm">تسجيل الدخول</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- AUTHENTICATION -->
+    <section class="my-auto auth">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form class="form">
+                        <h3 class="mb-4 main-heading-bold">دخول الأعضاء</h3>
+                        <div class="mb-4">
+                            <input class="form__input" type="email" placeholder="أدخل بريدك الإلكتروني" style="text-align: right;" />
+                        </div>
+                        <div class="mb-4">
+                            <input class="mb-3 form__input" type="password" placeholder="ادخل رقمك السري" />
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex me-3">
+                                    <label class="form-checkbox form-checkbox--primary">
+																		<input type="checkbox" />
+																		<svg viewBox="0 0 21 18">
+																			<symbol
+																				id="formCheckbox"
+																				viewBox="0 0 21 18"
+																				xmlns="http://www.w3.org/2000/svg"
+																			>
+																				<path
+																					d="M5.22003 7.26C5.72003 7.76 7.57 9.7 8.67 11.45C12.2 6.05 15.65 3.5 19.19 1.69"
+																					fill="none"
+																					stroke-width="2.25"
+																					stroke-linecap="round"
+																					stroke-linejoin="round"
+																				/>
+																			</symbol>
+																			<defs>
+																				<mask id="formCheckboxSm">
+																					<use class="tick mask" href="#formCheckbox" />
+																				</mask>
+																			</defs>
+																			<use class="tick" href="#formCheckbox" stroke="currentColor" />
+																			<path
+																				fill="white"
+																				mask="url(#formCheckboxSm)"
+																				d="M18 9C18 10.4464 17.9036 11.8929 17.7589 13.1464C17.5179 15.6054 15.6054 17.5179 13.1625 17.7589C11.8929 17.9036 10.4464 18 9 18C7.55357 18 6.10714 17.9036 4.85357 17.7589C2.39464 17.5179 0.498214 15.6054 0.241071 13.1464C0.0964286 11.8929 0 10.4464 0 9C0 7.55357 0.0964286 6.10714 0.241071 4.8375C0.498214 2.39464 2.39464 0.482143 4.85357 0.241071C6.10714 0.0964286 7.55357 0 9 0C10.4464 0 11.8929 0.0964286 13.1625 0.241071C15.6054 0.482143 17.5179 2.39464 17.7589 4.8375C17.9036 6.10714 18 7.55357 18 9Z"
+																			/>
+																		</svg>
+																		<svg class="lines" viewBox="0 0 11 11">
+																			<path d="M5.88086 5.89441L9.53504 4.26746" />
+																			<path d="M5.5274 8.78838L9.45391 9.55161" />
+																			<path d="M3.49371 4.22065L5.55387 0.79198" />
+																		</svg>
+																		</label>
+                                    <label class="form-check-label primary-color" for="formCheckbox">تذكرني على هذا الكمبيوتر</label>
+                                </div>
+                                <a href="forgot-password.html">هل نسيت كلمة السر؟</a>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button class="button button--primary">تسجيل الدخول</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GET STARTED -->
+    <section class="get-started">
+        <div class="get-started__graphic">
+            <figure>
+                <img src="../img/graphic-footer-circle.png" class="img-fluid" alt="graphic" />
+            </figure>
+        </div>
+        <div class="container-fluid">
+            <div class="get-started__row">
+                <img src="../img/svg/logo-white.svg" alt="cover" />
+                <p class="get-started__desc">
+                    يمكنك الاشتراك إما في خطتنا الشهرية أو الاستمتاع بخصومات مع خطتنا الشهرية والسنوية. سنكون سعداء لخدمتك مع مجموعتنا من المحتوى الفريد
+                </p>
+                <button class="button button--black ms-sm-auto">
+                  البدء	<i class="button--black__icon fas fa-sort-down"></i>
+					</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <ul class="list-inline my-md-5">
+                <li class="list-inline-item">
+                    <a href="landing-page.html">الصفحة الرئيسية </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="contact-us.html">اتصل بنا</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">مركز الخدمة </a>
+                </li>
+                <li class="list-inline-item active">
+                    <a href="about-us.html">من نحن</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">التطبيقات</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">آخر الأخبار </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="terms-conditions.html">الشروط والأحكام </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="privacy-policy.html">سياسة الخصوصية</a>
+                </li>
+            </ul>
+            <ul class="footer__social my-md-5">
+                <li>
+                    <a href="#"><i class="fab fa-fw fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-fw fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-fw fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-fw fa-youtube"></i></a>
+                </li>
+            </ul>
+            <p class="footer__copyright_power my-md-5">
+                بالشراكة مع أي تي ڤي
+            </p>
+            <p class="footer__copyright my-md-5">
+                جميع الحقوق محفوظة © فنون اكسبرس للانتاج الفني 2021. الكويت
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 4.6x -->
+    <!-- jQuery and Bootstrap Bundle (includes Popper)  -->
+    <!-- <script src="js/jquery.js"></script>
+		<script src="js/bootstrap-4.6x/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Bootstrap 5.0 beta 2 -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap-5.0/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
